@@ -1,0 +1,217 @@
+#equipe h2{
+	text-align: center;
+	font-size: 60px;
+	margin-bottom: 0px;
+	position: relative;
+	z-index: 2;
+	font-family: 'Kaushan Script', cursive;
+	letter-spacing: 8px;
+	color: black;
+	padding-top: 20px;
+}
+
+#equipe{
+	background-color: #FFF;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.group-equipe{
+	position: relative;
+	background: #fff;
+	width: 85%;
+	height: 60vh;
+	top: 15%;
+	left: 7%;
+	align-items: center;
+	box-shadow: 0 25px 30px rgba(0,0,0,.7);
+	z-index: 0;
+	display: flex;
+	box-sizing: border-box;
+}
+
+/*
+#equipe .curvtitle{
+	position: absolute;
+	background: transparent;
+	width: 50%;
+	height: 30%;
+	right: 0;
+	box-sizing: border-box;
+	border-left: 200px solid transparent;
+	border-top: 100px solid black;
+	z-index: 1;
+}*/
+
+.boxfot{
+	transform: translate3d(0,0,0);
+	list-style: none;
+	position: relative;
+	width: 20%;
+	height: 70vh;
+	max-height: 600px;
+	color: white;
+	overflow: hidden;
+
+	border-right: 1px solid #000;
+	transition: width 0.5s ease;
+	z-index: 2;
+	float: left;
+	background-position: center;
+	background-size: cover;
+	background-position: left;
+	
+}
+
+
+.boxfot h3{
+	padding-top: 50px;
+	position: absolute;
+	bottom: -20%;
+	left:  0;
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	box-sizing: border-box;
+	color: #fff;
+	overflow: hidden;
+	display: none;
+	margin-top: 20px;
+	transition: 0.40s;
+	transition-delay: 0.40s;
+}
+
+.boxfot:hover{
+	width: 40% !important;
+}
+
+.boxfot:hover h3{
+	bottom: 0;
+	font-size: 20px;
+	display: block;
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 70%);
+	transform: 0.5s ease;
+}
+
+.boxfot p{
+	position: absolute;
+	bottom: -25%;
+	left:  0;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	box-sizing: border-box;
+	color: #fff;
+	overflow: hidden;
+	display: none;
+}
+.boxfot:hover p{
+	display: block;
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+	position: absolute;
+}
+
+.group-equipe .boxfot:nth-child(1){
+	background-image: url("../img/foto 01.png");
+	background-size: cover;
+	background-position: center;
+}
+.group-equipe .boxfot:nth-child(2){
+	background-image: url("../img/foto 02.png");
+	background-size: cover;
+	background-position: center;
+}
+.group-equipe .boxfot:nth-child(3){
+	background-image: url("../img/foto 03.png");
+	background-size: cover;
+	background-position: center;
+}
+.group-equipe .boxfot:nth-child(4){
+	background-image: url("../img/foto 05.png");
+	background-size: cover;
+	background-position: center center;
+}
+.group-equipe .boxfot:nth-child(5){
+	background-image: url("../img/foto 06.png");
+	background-size: cover;
+	background-position: center center;
+}
+.group-equipe .boxfot:nth-child(6){
+	background-image: url("../img/foto 04.png");
+	background-size: cover;
+	background-position: center center;
+}
+
+
+/*RESPONSIVE MOBILE*/
+@media screen and (min-width: 768px){
+
+	/* EQUIPE */
+/*	#equipe{
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 100%;
+		margin: 0 auto;
+
+	}
+	#equipe h2{
+		text-align: center;
+		
+	}*/
+}
+
+
+@media screen and (max-width: 768px){
+/*
+	#equipe{
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 100%;
+		margin: 0 auto;
+
+	}
+	#equipe h2{
+		text-align: center;
+		
+
+	}*/
+}
+
+@media screen and (max-width: 600px){
+
+	#equipe h2{
+		padding-top: 15%;
+		font-size: 40px;
+	}
+
+	.boxfot{
+		width: 20%;
+		height: 55vh;
+	}
+
+	.group-equipe{
+		background: ;
+		width: 90%;
+		height: 60vh;
+		top: 5%;
+	}
+
+	.boxfot:hover{
+		width: 55% !important;
+	}
+
+	.group-equipe .boxfot:nth-child(2){
+		background-repeat: no-repeat;
+		background-position: 60% center;
+	}
+
+	.group-equipe .boxfot:nth-child(6){
+		background-repeat: no-repeat;
+		background-position: 30% center;
+	}
+}
